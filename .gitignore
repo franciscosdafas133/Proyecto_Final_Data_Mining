@@ -1,0 +1,19 @@
+# Entornos y cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Datos muy pesados para GitHub (>100 MB)
+datos/loc_lineal_1.dbf
