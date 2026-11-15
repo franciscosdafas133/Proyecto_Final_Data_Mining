@@ -51,27 +51,28 @@ Clustering sobre componentes principales:
    (`eps` 0,3–0,7, `min_samples` = 10), que no produce perfiles útiles.
 6. Análisis geográfico: unión espacial con las provincias, perfiles por departamento, índice de
    concentración, mapa del perfil predominante y DBSCAN espacial (haversine, 10 km, `min_samples` = 10)
-   sobre el perfil G3 (pequeños y desconectados): 124 focos.
+   sobre el perfil G3 (inventario pequeño y desconectado): 124 focos.
 
 | Grupo | % locales | Perfil |
 |---|---|---|
-| G0 | 16,8 | Conectados con cobertura 4G/5G |
-| G1 | 15,9 | Pequeños, antiguos y en reparación |
-| G2 | 26,2 | Bien equipados y conectados |
-| G3 | 31,4 | Pequeños y desconectados |
-| G4 | 9,7 | Inventario grande pero inoperativo |
+| G0 | 16,8 | Alta cobertura 4G/5G |
+| G1 | 15,9 | Inventario pequeño, antiguo y por reparar |
+| G2 | 26,2 | Inventario grande y conectado |
+| G3 | 31,4 | Inventario pequeño y desconectado |
+| G4 | 9,7 | Inventario grande pero poco operativo |
 
 ## Estructura
 
 ```
-Hito3_Entrega.ipynb         Notebook principal (limpieza, integración, PCA, clustering y análisis geográfico)
+Hito4_Entrega.ipynb         Notebook principal: Hito 3 más la sección 6 (focos de los cinco perfiles, validación y acción por provincia)
+Hito3_Entrega_Bryan.ipynb   Notebook del Hito 3 (respaldo)
 informe_hito3/              Informe del Hito 3 (formato IEEE conference)
     Mineros_Hito3.pdf         informe compilado
     Mineros_Hito3.tex         fuente LaTeX
     figuras/                  mapas usados en el informe
 datos/                      Archivos fuente
     peru_shapes/              shapefile de provincias (IGN/OCHA)
-salidas/                    Resultados de entregas anteriores
+salidas/                    Resultados; los del Hito 4 empiezan con hito4_ (tres mapas interactivos de Plotly en .html y la ficha por UGEL)
 requirements.txt            Dependencias
 Hito2_Entrega.ipynb, Hito2_PCA.ipynb, Proyecto_Mineros_Primera_Entrega.ipynb   Cuadernos de entregas anteriores
 ```
@@ -86,7 +87,7 @@ Hay que descomprimirlo antes de ejecutar el notebook:
 ```bash
 unzip datos/loc_lineal_1.zip -d datos/
 pip install -r requirements.txt
-jupyter notebook Hito3_Entrega.ipynb
+jupyter notebook Hito4_Entrega.ipynb
 ```
 
 Todas las rutas (datos y shapefile) son relativas a `datos/`, así que hay que ejecutarlo desde la raíz del repositorio.

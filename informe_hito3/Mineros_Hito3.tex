@@ -31,7 +31,7 @@ Docente: Soledad Espezúa Llerena}
 \maketitle
 
 \begin{abstract}
-La brecha tecnológica de los locales educativos del Perú combina conectividad, equipamiento y cobertura móvil, y saber si un local tiene internet no basta para distinguir sus necesidades. Este avance busca perfiles de brecha en 42\,215 locales, con datos del MINEDU (ESCALE) y del OSIPTEL. Los 17 indicadores se transforman (\texttt{log1p}, estandarización) y se resumen en cinco componentes principales (84,4~\% de la varianza). Se comparan K-means (k de 2 a 8), Ward y DBSCAN con silueta y Davies-Bouldin; se elige K-means con k = 5 (silueta 0,331; Davies-Bouldin 1,073), mientras que DBSCAN no produce perfiles útiles. Los perfiles van desde locales conectados con cobertura 4G/5G (16,8~\%) hasta locales pequeños y desconectados (31,4~\%), y su distribución territorial difiere entre departamentos. Quedan pendientes la validación con área y gestión y la detección de anomalías.
+La brecha tecnológica de los locales educativos del Perú combina conectividad, equipamiento y cobertura móvil, y saber si un local tiene internet no basta para distinguir sus necesidades. Este avance busca perfiles de brecha en 42\,215 locales, con datos del MINEDU (ESCALE) y del OSIPTEL. Los 17 indicadores se transforman (\texttt{log1p}, estandarización) y se resumen en cinco componentes principales (84,4~\% de la varianza). Se comparan K-means (k de 2 a 8), Ward y DBSCAN con silueta y Davies-Bouldin; se elige K-means con k = 5 (silueta 0,331; Davies-Bouldin 1,073), mientras que DBSCAN no produce perfiles útiles. Los perfiles van desde locales con alta cobertura 4G/5G (16,8~\%) hasta locales con inventario pequeño y desconectado (31,4~\%), y su distribución territorial difiere entre departamentos. Quedan pendientes la validación con área y gestión y la detección de anomalías.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -105,17 +105,17 @@ K-means con k = 5 supera a Ward en ambas métricas y se aplica a toda la base. D
 \toprule
 Grupo & Nombre & Locales (\%) & Recursos & Internet (\%) & Operativos (\%) & Reparación (\%) & 4G (\%) & 5G (\%) \\
 \midrule
-G0 & Conectados con cobertura 4G/5G & 16,8 & 45,6 & 86 & 96 & 8 & 100 & 98 \\
-G1 & Pequeños, antiguos y en reparación & 15,9 & 30,9 & 20 & 99 & 81 & 22 & 1 \\
-G2 & Bien equipados y conectados & 26,2 & 90,9 & 98 & 95 & 11 & 43 & 4 \\
-G3 & Pequeños y desconectados & 31,4 & 23,9 & 9 & 97 & 6 & 24 & 1 \\
-G4 & Inventario grande pero inoperativo & 9,7 & 73,3 & 31 & 30 & 6 & 21 & 0 \\
+G0 & Alta cobertura 4G/5G & 16,8 & 45,6 & 86 & 96 & 8 & 100 & 98 \\
+G1 & Inventario pequeño, antiguo y por reparar & 15,9 & 30,9 & 20 & 99 & 81 & 22 & 1 \\
+G2 & Inventario grande y conectado & 26,2 & 90,9 & 98 & 95 & 11 & 43 & 4 \\
+G3 & Inventario pequeño y desconectado & 31,4 & 23,9 & 9 & 97 & 6 & 24 & 1 \\
+G4 & Inventario grande pero poco operativo & 9,7 & 73,3 & 31 & 30 & 6 & 21 & 0 \\
 \bottomrule
 \end{tabular}
 \label{tab:perfiles}
 \end{table*}
 
-La Tabla~\ref{tab:perfiles} resume los cinco grupos. La variación se organiza en dos ejes: conectividad y cobertura (G0 y G2 frente a G1, G3 y G4) y estado del inventario (operativo en G0, G2 y G3; antiguo y en reparación en G1; poco operativo en G4). G0 se separa sobre todo por la cobertura del distrito ($Z_1$ promedio de 4,83, frente a valores entre $-1{,}55$ y $-0{,}08$ en los demás). G2 muestra locales equipados y conectados en distritos con cobertura baja (5G de 4~\%). G3 y G4 reúnen 41,1~\% de los locales, desconectados o con equipos que no funcionan. G4 tiene 81~\% de locales con tablets o móviles.
+La Tabla~\ref{tab:perfiles} resume los cinco grupos. La variación se organiza en dos ejes: conectividad y cobertura (G0 y G2 frente a G1, G3 y G4) y tamaño y estado del inventario (grande en G2 y G4; pequeño en G1 y G3; antiguo y por reparar en G1; poco operativo en G4). G0 se separa sobre todo por la cobertura del distrito ($Z_1$ promedio de 4,83, frente a valores entre $-1{,}55$ y $-0{,}08$ en los demás). G2 reúne locales con inventario grande y conectados en distritos con cobertura baja (5G de 4~\%). G1, G3 y G4 reúnen 57,0~\% de los locales: como mucho 31~\% de ellos tiene internet, y en G1 y G4 además los equipos están por reparar o no operan. G4 tiene 81~\% de locales con tablets o móviles.
 
 \subsection{Distribución territorial}
 \begin{figure*}[t]

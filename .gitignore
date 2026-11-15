@@ -17,3 +17,6 @@ desktop.ini
 
 # Datos muy pesados para GitHub (>100 MB)
 datos/loc_lineal_1.dbf
+
+# Notas internas de trabajo
+TAREAS_HITO4.md
