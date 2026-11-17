@@ -1,0 +1,6 @@
+﻿Perfil,Radio evaluado (km),Uso,Focos,Fuera de focos (%),Mayor foco (%)
+G0,10.0,Solo referencia,6,0.04,83.79
+G1,15.0,Radio elegido,67,18.3,19.51
+G2,10.0,Radio elegido,122,17.1,8.32
+G3,10.0,Radio elegido,124,19.3,30.38
+G4,20.0,Radio elegido,35,21.41,31.76
