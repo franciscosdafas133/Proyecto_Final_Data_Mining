@@ -72,7 +72,7 @@ informe_hito3/              Informe del Hito 3 (formato IEEE conference)
     figuras/                  mapas usados en el informe
 datos/                      Archivos fuente
     peru_shapes/              shapefile de provincias (IGN/OCHA)
-salidas/                    Resultados; los del Hito 4 empiezan con hito4_ (tres mapas interactivos de Plotly en .html y la ficha por UGEL)
+salidas/                    Resultados de Hito4_Entrega.ipynb: mapas de focos y de acción (.html), panel de acción, ficha por UGEL, ficha de locales y resumen de focos
 requirements.txt            Dependencias
 Hito2_Entrega.ipynb, Hito2_PCA.ipynb, Proyecto_Mineros_Primera_Entrega.ipynb   Cuadernos de entregas anteriores
 ```
